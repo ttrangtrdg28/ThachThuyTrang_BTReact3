@@ -5,7 +5,7 @@ export default class ProductList extends Component {
   renderProductList = () => {
     return this.props.productsData.map((product) => {
       return (
-        <div key={product.id} className="col-12 col-md-4 col-sm-4 mb-4">
+        <div key={product.id} className="col-12 col-md-3 col-sm-3 mb-4">
           <ProductItem
             item={product}
             setStateModal={this.props.setStateModal}
@@ -17,7 +17,7 @@ export default class ProductList extends Component {
 
   render() {
     return (
-      <div className="container my-5">
+      <div className="mx-auto my-5" style={{ maxWidth: "70%" }}>
         <div className="row">{this.renderProductList()}</div>
       </div>
     );

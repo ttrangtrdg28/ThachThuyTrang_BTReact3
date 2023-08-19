@@ -14,7 +14,7 @@ export default class ProductItem extends Component {
             onClick={() => {
               this.props.setStateModal(this.props.item);
             }}
-            class="btn btn-success"
+            class="btn btn-warning"
             type="button"
             id="cart"
             data-toggle="modal"
